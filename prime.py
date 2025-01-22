@@ -84,7 +84,7 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 
 # Replace with the path to your Google service-account JSON, or use an environment variable
 creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "google_service_account.json",  # <--- replaced filename here
+    "google.json",  # <--- replaced filename here
     scope
 )
 client = gspread.authorize(creds)
